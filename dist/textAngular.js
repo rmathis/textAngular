@@ -2591,7 +2591,7 @@ angular.module('textAngular.taBind', ['textAngular.factories', 'textAngular.DOM'
                                             angular.element(selection).replaceWith(_new);
                                             taSelection.setSelectionToElementStart(_new[0]);
                                         }
-                                    } else {
+                                    } /*else {
                                         // shift + Enter
                                         var tagName = selection.tagName.toLowerCase();
                                         //console.log('Shift+Enter', selection.tagName, attrs.taDefaultWrap, selection.innerHTML.trim());
@@ -2614,7 +2614,7 @@ angular.module('textAngular.taBind', ['textAngular.factories', 'textAngular.DOM'
                                                 taSelection.setSelectionToElementEnd(ps);
                                             }
                                         }
-                                    }
+                                    }*/
                                 }
                                 var val = _compileHtml();
                                 if(_defaultVal !== '' && (val.trim() === '' || val.trim() === '<br>')){
